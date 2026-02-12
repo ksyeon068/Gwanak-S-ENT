@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>관악성모이비인후과 클론코딩</title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta name='Title' content='관악성모이비인후과'>
+<meta name='Subject' content='관악성모이비인후과 클론코딩'>
+<meta name='Keywords' content='클론코딩'>
+<meta name='Author' content='김세연'>
+<meta name='Publisher' content='퍼블리싱 포트폴리오'>
+<meta name='Description' content='관악성모이비인후과 웹사이트를 참고하여 제작한 퍼블리싱 클론코딩 프로젝트입니다. 개인 학습 및 포트폴리오 용도입니다.'>
+<meta name='Author-Date' content='2026-02-12'>
+<meta name='Copyright' content='Clone coding project for portfolio'>
+
+<!-- 접근성 텍스트(skip) 숨김 -->
+<style>#skip{overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;}</style>
+
+<!-- 폰트어썸 -->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+<!-- 구글폰트 아이콘 -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0'>
+
+<!-- CSS 리셋 -->
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css'>
+
+<!-- 제이쿼리 3.7 CDN -->
+<script src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
+
+<!-- 로컬 CSS -->
+<link rel='stylesheet' href='./css/style.css'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+
+<!-- 로컬 js -->
+<script src='./js/script.js' defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+<!-- 시각장애인 웹 접근성을 위한 skip _ 지우지않아도 됩니다. -->
+
+<ul id='skip'>
+   <li><a href='#header'>헤더 바로가기</a></li>
+   <li><a href='#nav'>메뉴 바로가기</a></li>
+   <li><a href='#content'>내용 바로가기</a></li>
+   <li><a href='#footer'>하단 바로가기</a></li>
+</ul>
+
+<!-- 공백을 위한 공간입니다. -->
+<div id="wrap">
+   <header id="header">
+      <div class="top_nav">
+         <div class="header_top">
+            <div class="inner">
+               <div class="num_location">
+                  <div class="num"><i class="fas fa-phone"></i><p>02 . 883 . 7570</p></div>
+                  <div class="location"><i class="fas fa-map"></i><p>서울 관악구 관악로 186, WD세븐스오피스텔 4층</p></div>
+               </div>
+               <div class="lang">
+                  <ul>
+                     <li><a href="#">KR</a></li>
+                     <li><a href="#">EN</a></li>
+                     <li><a href="#">CH</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <nav id="nav">
+            <div class="inner">
+               <div class="navLogo"><img src="./img/cath02.png" alt="logoW" id="logoImg"></div>
+               <ul class="navList">
+                  <li>관악성모이비인후과 소개
+                     <ul>
+                        <li><a href="#">병원 소개</a></li>
+                        <li><a href="#">의료진 소개</a></li>
+                        <li><a href="#">보유장비 소개</a></li>
+                        <li><a href="#">병원 둘러보기</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">건물 들어오시는 길</a></li>
+                        <li><a href="#">주차안내</a></li>
+                     </ul>
+                  </li>
+                  <li>귀 클리닉
+                     <ul>
+                        <li><a href="#">중이염</a></li>
+                        <li><a href="#">외이도염</a></li>
+                        <li><a href="#">난청</a></li>
+                        <li><a href="#">이명</a></li>
+                     </ul>
+                  </li>
+                  <li>코 클리닉
+                     <ul>
+                        <li><a href="#">부비동염(축농증)</a></li>
+                        <li><a href="#">알레르기 비염</a></li>
+                        <li><a href="#">비후성 비염</a></li>
+                        <li><a href="#">코막힘</a></li>
+                        <li><a href="#">후각장애</a></li>
+                     </ul>
+                  </li>
+                  <li>목 클리닉
+                     <ul>
+                        <li><a href="#">편도선염</a></li>
+                        <li><a href="#">편도결석</a></li>
+                        <li><a href="#">역류성 인후두염</a></li>
+                        <li><a href="#">음성장애</a></li>
+                        <li><a href="#">구내염</a></li>
+                     </ul>
+                  </li>
+                  <li>특화진료
+                     <ul>
+                        <li><a href="#">수면다원검사</a></li>
+                        <li><a href="#">초음파 클리닉</a></li>
+                        <li><a href="#">어지럼증 클리닉</a></li>
+                        <li><a href="#">수액 클리닉</a></li>
+                     </ul>
+                  </li>
+                  <li>공지사항
+                     <ul>
+                        <li><a href="#">공지사항</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <nav id="m-nav">
+            <div class="m-inner">
+               <div class="m-navLogo_m-menuIcon">
+                  <div class="navLogo"><img src="./img/cath02.png" alt="logoW"></div>
+                  <div class="m-menuIcon"><i class="fas fa-bars"></i></div>
+               </div>
+               <ul class="m-navList">
+                  <li><a href="#">관악성모이비인후과 소개</a><i class="fas fa-chevron-down"></i>
+                     <ul>
+                        <li><a href="#">병원 소개</a></li>
+                        <li><a href="#">의료진 소개</a></li>
+                        <li><a href="#">보유장비 소개</a></li>
+                        <li><a href="#">병원 둘러보기</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">건물 들어오시는 길</a></li>
+                        <li><a href="#">주차안내</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">귀 클리닉</a><i class="fas fa-chevron-down"></i>
+                     <ul>
+                        <li><a href="#">중이염</a></li>
+                        <li><a href="#">외이도염</a></li>
+                        <li><a href="#">난청</a></li>
+                        <li><a href="#">이명</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">코 클리닉</a><i class="fas fa-chevron-down"></i>
+                     <ul>
+                        <li><a href="#">부비동염(축농증)</a></li>
+                        <li><a href="#">알레르기 비염</a></li>
+                        <li><a href="#">비후성 비염</a></li>
+                        <li><a href="#">코막힘</a></li>
+                        <li><a href="#">후각장애</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">목 클리닉</a><i class="fas fa-chevron-down"></i>
+                     <ul>
+                        <li><a href="#">편도선염</a></li>
+                        <li><a href="#">편도결석</a></li>
+                        <li><a href="#">역류성 인후두염</a></li>
+                        <li><a href="#">음성장애</a></li>
+                        <li><a href="#">구내염</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">특화진료</a><i class="fas fa-chevron-down"></i>
+                     <ul>
+                        <li><a href="#">수면다원검사</a></li>
+                        <li><a href="#">초음파 클리닉</a></li>
+                        <li><a href="#">어지럼증 클리닉</a></li>
+                        <li><a href="#">수액 클리닉</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">공지사항</a><i class="fas fa-chevron-down"></i>
+                     <ul>
+                        <li><a href="#">공지사항</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <div id="content">
+      <div class="mainSwiper">
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide slide1">
+                  <div class="main_text">
+                     <h2>서울대입구역 7번출구 앞 [WD세븐스 오피스텔 빌딩 4층] 내원 환자 무료 주차</h2>
+                     <h1>관악성모 <span>이비인후과</span></h1>
+                     <p>어지럼증/청력/보청기/이명/중이염/외이도염/천식/코골이/수면다원검사/양압기/수액/비염/편도결석</p>
+                     <a class="mainBtn">병원 소개 알아보기</a>
+                  </div>
+               </div>
+               <div class="swiper-slide slide2">
+                  <div class="main_text">
+                     <h2>"국민건강보험 적용되는 수면다윈검사 및 양압기 처방"</h2>
+                     <h1><span>수면다원검사</span> 클리닉</h1>
+                     <p>수면다원검사는 잠자는 동안 발생하는 문제들에 대해 파악할 수 있는 검사법입니다.
+                        <br>하루동안 검사실에서 잠을 자면서 검사하기 때문에 개개인의 특성에 맞춰 검사가 이루어집니다.
+                     </p>
+                     <a class="mainBtn">더 알아보기</a>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </div>
+      <div class="map">
+         <div class="timeInfo"><img src="./img/map05.png" alt="진료안내"></div>
+         <div class="mapImg"><img src="./img/map07.png" alt="위치"></div>
+      </div>
+      <div class="notice">
+         <div class="notice_community">
+            <h2>공지사항</h2>
+            <a href="#" class="community">커뮤니티 더보기<i class="fas fa-long-arrow-alt-right"></i></a>
+         </div>
+         <div class="nose_slip">
+            <div class="nose">
+               <img src="./img/237523636_1.jpg" alt="코골이/수면무호흡 네이버예약 시행">
+               <div class="notice-subText">
+                  <a href="#">코골이/수면무호흡 네이버예약 시행</a>
+                  <p>코골이/수면무호흡 네이버예약 시행</p>
+                  <p>2025-10-10</p>
+               </div>
+            </div>
+            <div class="slip">
+               <img src="./img/132637184_555555.jpg" alt="수면다원검사 건강보험 적용 안내">
+               <div class="notice-subText">
+                  <a href="#">수면다원검사 건강보험 적용 안내</a>
+                  <p>.</p>
+                  <p>2022-10-17</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="info">
+         <h3 class="reveal">안녕하세요. 관악성모이비인후과입니다.<br>
+            본원에서는 주민들의 귀, 코, 목 질환을 치료 / 예방 / 관리하고 있습니다.
+            <strong>편안하고 따듯한 분위기속에서 환자분들이 편리하게 이용할 수 있는 진료를 제공하겠습니다.</strong>
+         </h3>
+         <div class="infoWrap">
+            <ul>
+               <li class="reveal" style="--delay: 0s">
+                  <a href="#">
+                     <img src="./img/clinic.png" alt="병원소개">
+                     <h4>병원소개</h4>
+                     <p>병원 소개 / 의료진 소개<br>
+                        첨단장비 소개 / 둘러보기<br>
+                        진료시간 / 찾아오시는 길
+                     </p>
+                     <span>더 알아보기</span>
+                  </a>
+               </li>
+               <li class="reveal" style="--delay: 0.15s">
+                  <a href="#">
+                     <img src="./img/ear01.png" alt="귀 클리닉">
+                     <h4>귀 클리닉</h4>
+                     <p>중이염 / 외이도염<br>
+                        난청 /이명<br>
+                        어지럼증 / 청각장애
+                     </p>
+                     <span>더 알아보기</span>
+                  </a>
+               </li>
+               <li class="reveal" style="--delay: 0.3s">
+                  <a href="#">
+                     <img src="./img/noes.png" alt="코 클리닉">
+                     <h4>코 클리닉</h4>
+                     <p>알레르기 비염<br>
+                        축농증 /코막힘<br>
+                        후각장애 / 비염수술
+                     </p>
+                     <span>더 알아보기</span>
+                  </a>
+               </li>
+               <li class="reveal" style="--delay: 0.4s">
+                  <a href="#">
+                     <img src="./img/neck.png" alt="목 클리닉">
+                     <h4>목 클리닉</h4>
+                     <p>감기 / 편도질환<br>
+                        인후두염 / 만성기침<br>
+                        위식도역류 / 음성질환
+                     </p>
+                     <span>더 알아보기</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="view">
+         <div class="viewText">
+            <h3>
+               <span>관악성모이비인후과</span><br>
+               둘러보기
+            </h3>
+            <p class="viewMore"><a href="#">더 알아보기</a><i class="fas fa-long-arrow-alt-right"></i></p>
+         </div>
+         <div class="viewPic">
+            <ul>
+               <li><a href="#">접수데스크<i class="fas fa-plus"></i></a></li>
+               <li><a href="#">환자대기실<i class="fas fa-plus"></i></a></li>
+               <li><a href="#">호흡기 치료실<i class="fas fa-plus"></i></a></li>
+               <li><a href="#">진료실<i class="fas fa-plus"></i></a></li>
+               <li><a href="#">청력검사실<i class="fas fa-plus"></i></a></li>
+               <li><a href="#">CT실<i class="fas fa-plus"></i></a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="qna">
+         <div class="qnaText">
+            <h3>
+               <span>관악성모이비인후과</span><br>
+               자주 묻는 질문들
+            </h3>
+            <p class="viewMore"><a href="#">네이버플레이스 바로가기</a><i class="fas fa-long-arrow-alt-right"></i></p>
+         </div>
+         <div class="qnaIfo">
+            <ul>
+               <li><p><span>01</span> 관악성모이비인후과 진료시간<i class="fas fa-chevron-down"></i></p>
+                  <ul>
+                     <li>평 일 : 09:00 ~ 19:00<br>
+                        토요일: 09:00 ~ 14:00 (점심시간 없음)<br>
+                        점심시간 : 13:00 ~ 14:00<br>
+                        일요일 : 휴진
+                     </li>
+                  </ul>
+               </li>
+               <li><p><span>02</span> 찾아오시는 길<i class="fas fa-chevron-down"></i></p>
+                  <ul>
+                     <li>서울 관악구 관악로 186, WD세븐스오피스텔 4층 서울대입구역 7번 출구 앞<br>
+                        <br>
+                        도보로 오실 때 : 서울대입구역 7번출구로 나오시면 우측에 "모자가게"가 바로 있습니다. 모자 가게 옆에 전면이 유리로 되어 있는 신축 건물이 있는데, 건물 사이에 건물 출입로가 있습니다. 출입로를 따라 들어오시면 엘리베이터가 있어 4층으로 오시면 됩니다.<br>
+                        <br>
+                        자동차로 오실 때 : 건물 뒷편 주차타워에 기계식 주차가 가능한데, 네비게이션으로 삼미옥을 치고 오시면 삼미옥 맞은편 주차타워에 주차하실 수 있습니다. 단, 승용차만 주차가 가능하면 SUV는 주차가 어렵습니다. 병원 방문 시 주차 무료입니다.<br>
+                     </li>
+                  </ul>
+               </li>
+               <li><p><span>03</span> 관악성모이비인후과 특화진료<i class="fas fa-chevron-down"></i></p>
+                  <ul>
+                     <li>관악성모이비인후과는 우수한 진료서비스를 제공하기 위해 대학병원급 첨단시설을 갖추고 있어 정확한 진단이 가능합니다. 청력, 어지러움, 귀불편감, 보청기, 코골이, 수면다원검사, 초음파, CT, 편도결석제거, 천식, 감기, 비염, 축농증, 중이염, 영양수액 클리닉 등 귀, 코, 목 전반에 걸쳐서 진료를 하고 있습니다. 1인실 수면다원검사 시설을 갖추고 있어 보다 쾌적하게 검사 받으실 수 있습니다. 필요시 양압기대여를 진행하고 있습니다.<br>
+                        청각장애진단검사도 진행하며 장애진단에 이은 국가지원 보청기 관련해서도 연속해서 진행해드리고 있습니다.
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+
+      </div>
+      <div class="check">
+         <div class="swiper checkSwiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="checkBox">
+                     <div class="checkBoxinner">
+                        <h4>쾌적한 1인실 <span>수면다원검사</span></h4>
+                        <p>수면다원검사는 수면장애의 정밀한 진단과 그 장애의 정도를 평가하는 객관적인 자료를 확인하는 검사입니다. 불면증, 수면무호흡증, 코골이, 기면증, 하지불안증후군 등 요인으로 수면장애를 겪고 있는 분이 대상자입니다.</p>
+                        <br>
+                        <p>수면다원검사는 병원에서 몸에 센서를 부착해 수면 중 뇌파, 안구운동, 근육의 움직임, 호흡 심전도 등을 종합적으로 측정하고 동시에 수면 상태를 비디오를 통해 녹화합니다. 검사에서 얻은 데이터를 분석하여 수면과 관련된 질환을 진단하고 치료방침을 정하게 됩니다. 하룻밤 병원 검사실에서 잠을 자야 하기 때문에 쾌적한 환경에서 검사 받으실 수 있도록 시설을 갖추고 있습니다.  </p>
+                        <a href="#" class="checkBoxBtn">수면다원검사 더 알아보기</a>
+                     </div>
+                  </div>
+                  <img src="./img/main_slider_009.jpg" alt="수면다원검사">
+               </div>
+               <div class="swiper-slide">
+                  <div class="checkBox">
+                    <div class="checkBoxinner">
+                        <h4>VNG<span>(비디오안진검사)</span></h4>
+                        <p>비디오안진검사는 어지럼증, 이석증, 실신 등의 원인을 찾기 위해 개발된 검사로 카메라로 촬영된 눈동자의 움직임을 컴퓨터로 분석하여 눈동자의 안진을 측정하는 검사입니다. </p>
+                        <br>
+                        <p>안진검사는 특수한 안경(프렌첼 안경)을 착용하여 안진의 방향, 정도, 주시 방향을 면밀하게 관찰합니다. 안진검사는 전겅기능검사 중의 하나로 검사를 통해 귀의 전정기관에서 발생한 어지러움인지 중추신경계의 기능적인 이상으로 발생되는 건지 알아보는데 도움을 줄 수 있습니다. </p>
+                        <a href="#" class="checkBoxBtn">Explore services</a>
+                    </div>
+                  </div>
+                  <img src="./img/main_slider_010.jpg" alt="VNG">
+               </div>
+            </div>
+         </div>
+         <div class="check-button-prev"><i class="fas fa-arrow-up"></i></div>
+         <div class="check-button-next"><i class="fas fa-arrow-down"></i></div>
+      </div>
+      <div class="cooperation">
+         <div class="cooperationWrap">
+            <div class="coopText">
+               <i class="fas fa-quote-left"></i>
+               <h5>관악성모이비인후과 협력병원</h5>
+            </div>
+            <div class="swiper cooperationSwiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/logo_01.jpg" alt="서울성모병원"></div>
+                  <div class="swiper-slide"><img src="./img/logo_03.jpg" alt="여의도성모병원"></div>
+                  <div class="swiper-slide"><img src="./img/logo_04.jpg" alt="서울특별시보라매병원"></div>
+                  <div class="swiper-slide"><img src="./img/logo_05.jpg" alt="삼성서울병원"></div>
+                  <div class="swiper-slide"><img src="./img/logo_06.jpg" alt="중앙대학교병원"></div>
+                  <div class="swiper-slide"><img src="./img/logo_07.jpg" alt="서울아산병원"></div>
+                  <div class="swiper-slide"><img src="./img/logo_08.jpg" alt="세브란스병원"></div>
+                  <div class="swiper-slide"><img src="./img/logo_09.jpg" alt="강남세브란스병원"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer id="footer">
+      <div class="footerWrap">
+         <div class="fL">
+            <span>병원정보</span>
+            <p>상호명 : 관악성모이비인후과의원<br>
+               대표 : 한승우<br>
+               개인정보책임자 : 한승우<br>
+               사업자등록번호 : 709-92-01061<br>
+               © 2022 Copyright ⓒ 관악성모이비인후과의원.All rights reserved.Designed by medinics.
+            </p>
+         </div>
+         <div class="fR">
+            <span>찾아 오시는 길</span>
+            <p>서울 관악구 관악로 186<br>
+               WD세븐스오피스텔 4층<br>
+               서울대입구역 7번 출구 앞<br>
+               <strong>☏ 02-883-7570</strong>
+            </p>
+         </div>
+      </div>
+   </footer>
+   <div id="quick">
+      <div class="contact">
+         <div class="quickText">
+            <i class="fas fa-phone"></i>
+            <p>문의하기</p>
+         </div>
+      </div>
+      <div class="navertalk">
+         <div class="quickText">
+            <img src="./img/gskmtalk001.ico" alt="네이버톡톡로고">
+            <p>네이버톡톡</p>
+         </div>
+      </div>
+      <div class="comming">
+         <div class="quickText">
+            <i class="far fa-map"></i>
+            <p>찾아오시는 길</p>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+</body>
+</html>
