@@ -136,7 +136,7 @@ a{text-decoration: none; color: variables.$text-color;}
                                     position: absolute;
                                     top: 68px; left: 0;
                                     height: auto;
-                                    background: #555;
+                                    background: #272727;
                                     text-align: left;
                                     padding: 25px;
                                     width: 100%;
@@ -145,10 +145,16 @@ a{text-decoration: none; color: variables.$text-color;}
                                     >li{
                                         padding: 0;
                                         >a{
+                                            display: inline-block;
                                             font-weight: normal;
                                             line-height: 40px;
                                             color: variables.$W-text-color;
                                             font-weight: 300;
+                                            transition: transform .3s ease, color .3s ease;
+                                            &:hover{
+                                                color: #666;
+                                                transform: translateX(5px);
+                                            }
                                         }
                                     }
                                 }
