@@ -1140,9 +1140,20 @@ a{text-decoration: none; color: variables.$text-color;}
                                 padding: 0 20px;
                                 margin: 0 auto;
                                 h2{font-size: 16px;}
-                                h1{font-size: 35px;}
-                                p{font-size: 16px;}
+                                h1{font-size: 32px;}
+                                p{font-size: 14px;}
                             }
+                        }
+                        .swiper-slide.slide2,
+                        .swiper-slide.slide2.swiper-slide-duplicate{
+
+                            .main_text{
+                                p{
+                                    margin-bottom: 30px;
+                                    line-height: 20px;
+                                }
+                            }
+
                         }
                     }
                 }
@@ -1250,10 +1261,14 @@ a{text-decoration: none; color: variables.$text-color;}
                                     h4{
                                         font-size: 20px;
                                         font-weight: 500;
+                                        margin-bottom: 18px;
                                     }
                                     p{
                                         font-size: 12px; line-height: 160%;
                                         font-weight: 300;
+                                    }
+                                    p + p{
+                                        margin-top: 10px;
                                     }
                                     .checkBoxBtn{
                                         font-size: 11px;
