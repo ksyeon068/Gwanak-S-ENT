@@ -168,12 +168,12 @@ a{text-decoration: none; color: variables.$text-color;}
                 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
                 .m-inner{
                     width: 100%;
-                    height: 73px;
+                    height: 60px;
                     align-items: center;
                     margin: 0 auto;
                     
                     .m-navLogo_m-menuIcon{
-                        padding: 0 30px;
+                        padding: 0 10px;
                         display: flex;
                         justify-content: space-between;
                         height: 100%;
@@ -181,6 +181,7 @@ a{text-decoration: none; color: variables.$text-color;}
                         
                         .navLogo{
                             padding: 0 8px;
+                            img{width: 80%;}
                         }
                         .m-menuIcon{font-size: 24px;}
                     }
@@ -200,7 +201,7 @@ a{text-decoration: none; color: variables.$text-color;}
                                     padding-left: 20px;
                                     width: 100%;
                                     height: 50px;
-                                    font-size: 20px;
+                                    font-size: 18px;
                                     font-weight: bold;
                                     color: #fff;
                                     background: rgba(20, 20, 20, 0.8);
@@ -227,8 +228,8 @@ a{text-decoration: none; color: variables.$text-color;}
                                             color: variables.$sub-text-color;
                                             font-weight: 400;
                                             &:hover{color: #8d8d8d;}
-                                            font-size: 20px;
-                                            padding: 10px 0;
+                                            font-size: 18px;
+                                            padding: 8px 0;
                                             width: 100%;
                                             display: inline-block;
                                         }
@@ -1148,6 +1149,7 @@ a{text-decoration: none; color: variables.$text-color;}
             }
             .notice{
                 display: block;
+                padding: 75px 5% 50px 5%;
                 .notice_community{
                     width: 50%;
                     margin-bottom: 30px;
@@ -1167,6 +1169,7 @@ a{text-decoration: none; color: variables.$text-color;}
                 
             }
             .info{
+                margin: 20px auto 40px;
                 h3{
                     font-size: 20px;
                     line-height: 30px;
@@ -1191,6 +1194,7 @@ a{text-decoration: none; color: variables.$text-color;}
                 }
             }
             .view{
+                padding: 75px 5%;
                 .viewText{
                     width: 100%;
                     h3{
@@ -1202,6 +1206,7 @@ a{text-decoration: none; color: variables.$text-color;}
                 .viewPic{display: none;}
             }
             .qna{
+                padding: 75px 4%;
                 display: block;
                 .qnaText{
                     width: 100%;

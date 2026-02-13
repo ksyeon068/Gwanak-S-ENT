@@ -1,15 +1,22 @@
 $(function(){
     //스크롤 헤더고정 + 고정시 로고변경
     const header = document.querySelector("#header");
-    const logo = document.querySelector("#logoImg");
+    const logos = document.querySelectorAll("#logoImg, #logoImgMobile");
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 100) {
             header.classList.add("scrolled");
-            logo.src = "./img/cath03.png"; // 바뀔 로고
+
+            logos.forEach(logo => {
+                logo.src = "./img/cath03.png"; // 바뀔 로고
+            });
+
         } else {
             header.classList.remove("scrolled");
-            logo.src = "./img/cath02.png"; // 원래 로고
+
+            logos.forEach(logo => {
+                logo.src = "./img/cath02.png"; // 원래 로고
+            });
         }
     });
     
